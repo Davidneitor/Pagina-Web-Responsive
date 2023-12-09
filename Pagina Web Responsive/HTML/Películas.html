@@ -1,0 +1,115 @@
+<html lang="es">
+<head>
+    <!-- Configuración de la codificación de caracteres y título de la página -->
+    <meta charset="UTF-8">
+    <title>DavidCine</title> 
+    
+    <!-- Enlace a la hoja de estilos externa "estilos peliculas.css" -->
+    <link rel="stylesheet" type="text/css" href="CSS/estilos_peliculas.css"> 
+    
+    <!-- Inclusión del conjunto de iconos Font Awesome -->
+    <script src="https://kit.fontawesome.com/1cd4b398c1.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <!-- Barra de navegación -->
+        <nav>
+            <!-- Logo de la página -->
+            <img src="https://cdn-icons-png.flaticon.com/512/4221/4221360.png" alt="Logo">
+            
+            <!-- Título de la página -->
+            <h1>DavidCine</h1>
+            
+            <!-- Enlaces de la barra de navegación -->
+            <a class="enlace" href="Inicio.html">Inicio</a>
+            <a class="enlace" href="Películas.html"><u>Películas</u></a>
+            <a class="enlace" href="Actores.html">Actores</a>
+            
+            <!-- Contenedor de búsqueda con input y botón -->
+            <div class="container">
+                <input type="text" placeholder="Buscar..."> <!-- Campo de búsqueda -->
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i> <!-- Icono de lupa -->
+                </button>
+            </div>
+        </nav>
+    </header> 
+    
+    <!-- Contenido principal de la página -->
+    <main>
+        <!-- Enlace y contenido de la película "Spiderman" -->
+        <a href="https://es.wikipedia.org/wiki/The_Amazing_Spider-Man_(pel%C3%ADcula)" target="_blank">
+            <div class="peliculas">
+                <div class="nombre">
+                    <h1>Spiderman</h1> <!-- Título de la película -->
+                </div>
+                <div class="poster">
+                    <img src="Multimedia/Poster/Spiderman.png" alt="Póster_Spiderman"> <!-- Póster de la película -->
+                </div>
+                <div class="nombre">
+                    <h1>Tráiler</h1> <!-- Título del tráiler -->
+                </div>
+                <div class="trailer">
+                    <video width="686" height="386" controls>
+                        <source src="Multimedia/Videos/Trailer3.mp4" type="video/mp4" alt="Tráiler_Spiderman"> <!-- Fuente del tráiler -->
+                    </video>     
+                </div>
+            </div>
+        </a>
+        
+        <!-- Enlace y contenido de la película "La Lego Película" -->
+        <a href="https://es.wikipedia.org/wiki/The_Lego_Movie" target="_blank">
+            <div class="peliculas">
+                <div class="nombre">
+                    <h1>La Lego Película</h1> <!-- Título de la película -->
+                </div>
+                <div class="poster">
+                    <img src="Multimedia/Poster/Legopelicula.png" alt="Poster_la_lego_pelicula"> <!-- Póster de la película -->
+                </div>
+                <div class="nombre">
+                    <h1>Tráiler</h1> <!-- Título del tráiler -->
+                </div>
+                <div class="trailer">
+                    <video width="686" height="386" controls>
+                        <source src="Multimedia/Videos/Trailer4.mp4" type="video/mp4" alt="Tráiler_la_lego_pelicula"> <!-- Fuente del tráiler -->
+                    </video>     
+                </div>
+            </div>
+        </a>
+        
+        <!-- Enlace y contenido de la película "Barbie" -->
+        <a href="https://es.wikipedia.org/wiki/Barbie_(pel%C3%ADcula)" target="_blank">
+            <div class="peliculas">
+                <div class="nombre">
+                    <h1>Barbie</h1> <!-- Título de la película -->
+                </div>
+                <div class="poster">
+                    <img src="Multimedia/Poster/Barbie.png" alt="poster_barbie"> <!-- Póster de la película -->
+                </div>
+                <div class="nombre">
+                    <h1>Tráiler</h1> <!-- Título del tráiler -->
+                </div>
+                <div class="trailer">
+                    <video width="686" height="386" controls>
+                        <source src="Multimedia/Videos/Trailer1.mp4" type="video/mp4"> <!-- Fuente del tráiler -->
+                    </video>     
+                </div>
+            </div>
+        </a>
+    </main>
+    
+    <!-- Pie de página -->
+    <footer>
+        <p>
+            <em>
+                David Alonso Tur<br>
+                dalonsotur@cifpfbmoll.eu<br>
+                Desenvolupament d'aplicacions multiplataforma
+            </em>
+        </p>
+    </footer>
+</body>
+</html>

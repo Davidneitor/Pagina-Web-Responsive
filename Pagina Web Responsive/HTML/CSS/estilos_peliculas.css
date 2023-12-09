@@ -1,0 +1,47 @@
+/* Importa los estilos del archivo "header+footer.css" */
+@import url(header+footer.css);
+
+/* Estilos generales para el cuerpo del documento */
+body {
+    margin: 0; /* Elimina el margen predeterminado del cuerpo del documento */
+    font-family: Tahoma, Verdana; /* Define la fuente del texto */
+}
+
+/* Estilos para el contenido principal */
+main {
+    padding: 0px; /* Elimina el relleno interno del elemento "main" */
+}
+
+/* Estilos para las secciones de películas */
+.peliculas {
+    width: 25%; /* Ancho del contenedor de película */
+    background-color: aquamarine; /* Color de fondo */
+    color: white; /* Color del texto */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 30px; /* Margen alrededor del contenedor de película */
+    display: inline-block; /* Permite que los elementos de películas se alineen en línea */
+}
+
+/* Estilos al pasar el mouse sobre el contenedor de película */
+.peliculas:hover {
+    box-shadow: 2px 2px 10px black; /* Sombra al pasar el mouse */
+}
+
+/* Estilos para las imágenes de póster dentro del contenedor de película */
+.poster img {
+    width: 100%; /* Ancho de la imagen al 100% del contenedor */
+    border-top-right-radius: 10px; /* Bordes redondeados en la esquina superior derecha */
+    border-top-left-radius: 10px; /* Bordes redondeados en la esquina superior izquierda */
+}
+
+/* Estilos para el nombre de la película dentro del contenedor */
+.nombre {
+    text-align: center; /* Alinea el texto al centro */
+}
+
+/* Estilos para el video del tráiler dentro del contenedor de película */
+.trailer video {
+    width: 100%; /* Ancho del video al 100% del contenedor */
+    border-bottom-right-radius: 10px; /* Bordes redondeados en la esquina inferior derecha */
+    border-bottom-left-radius: 10px; /* Bordes redondeados en la esquina inferior izquierda */
+}

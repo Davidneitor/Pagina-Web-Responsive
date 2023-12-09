@@ -1,0 +1,133 @@
+/* Importa los estilos del archivo "header+footer.css" */
+@import url(header+footer.css);
+
+/* Estilos generales para el cuerpo del documento */
+body {
+    margin: 0; /* Elimina el margen predeterminado del cuerpo del documento */
+    font-family: Tahoma, Verdana; /* Define la fuente del texto */
+}
+
+/* Estilos para los títulos h2 dentro del elemento main */
+main h2 {
+    color: aquamarine; /* Color del texto */
+    -webkit-text-stroke: 2px rgb(84, 169, 141); /* Añade un contorno al texto */
+    margin: 0; /* Elimina el margen del título */
+    display: flex; /* Usa el modelo de caja flexible */
+    justify-content: flex-start; /* Alinea el contenido al inicio del contenedor */
+    margin-left: 20px; /* Margen a la izquierda */
+    margin-top: 10px; /* Margen superior */
+    font-size: 45px; /* Tamaño de fuente */
+}
+
+/* Estilos para el banner principal */
+.banner {
+    position: relative; /* Posición relativa para posicionar elementos internos */
+    width: 100%; /* Ancho del banner al 100% del contenedor principal */
+    max-width: 100%; /* Ancho máximo del banner al 100% del contenedor principal */
+    height: 300px; /* Altura del banner */
+    margin: 0; /* Elimina el margen */
+    overflow: hidden; /* Oculta el contenido que excede el tamaño del banner */
+}
+
+/* Estilos para la imagen del banner */
+.imagenbanner {
+    width: 100%; /* Ancho de la imagen al 100% del contenedor */
+    height: 300px; /* Altura de la imagen */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+    filter: contrast(200%); /* Aplica un filtro de contraste al 200% */
+}
+
+/* Estilos para el texto sobre la imagen del banner */
+.textobanner {
+    position: absolute; /* Posición absoluta para superponer el texto sobre la imagen */
+    top: 50%; /* Centra verticalmente el texto */
+    left: 50%; /* Centra horizontalmente el texto */
+    transform: translate(-50%, -50%); /* Centra el texto en el centro absoluto */
+    color: white; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    width: 100%; /* Ancho del texto al 100% del contenedor */
+    max-width: 400px; /* Ancho máximo del texto */
+    font-size: 2em; /* Tamaño de fuente */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Tipo de fuente */
+    white-space: nowrap; /* No permite saltos de línea */
+    display: flex; /* Usa el modelo de caja flexible */
+    flex-direction: column; /* Alinea el contenido en columna */
+    align-items: center; /* Alinea el contenido al centro en el eje transversal */
+    justify-content: center; /* Alinea el contenido al centro en el eje principal */
+}
+
+/* Estilos para los párrafos dentro del elemento main */
+main p {
+    display: flex; /* Usa el modelo de caja flexible */
+    justify-content: flex-start; /* Alinea el contenido al inicio del contenedor */
+    margin-left: 20px; /* Margen a la izquierda */
+}
+
+/* Estilos para el reproductor de audio */
+.audio-player {
+    display: flex; /* Usa el modelo de caja flexible */
+    justify-content: flex-start; /* Alinea el contenido al inicio del contenedor */
+    margin-top: 10px; /* Margen superior */
+    background-color: aquamarine; /* Color de fondo */
+    padding: 20px; /* Relleno interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilos para el elemento de audio */
+audio {
+    width: 100%; /* Ancho al 100% del contenedor */
+    outline: none; /* Elimina el contorno al hacer clic */
+}
+
+/* Estilos específicos para los controles del reproductor de audio en navegadores webkit (como Chrome y Safari) */
+audio::-webkit-media-controls-panel {
+    background-color: #fff; /* Color de fondo del panel de controles */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+audio::-webkit-media-controls-play-button {
+    color: #007bff; /* Color del botón de reproducción */
+}
+
+audio::-webkit-media-controls-timeline {
+    color: #007bff; /* Color de la línea de tiempo */
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    color: #555; /* Color de la hora actual y restante */
+}
+
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-volume-slider {
+    display: none; /* Oculta el botón de silencio y el control de volumen */
+}
+
+/* Estilos para el contenedor de videos */
+.video-container {
+    display: flex; /* Usa el modelo de caja flexible */
+    justify-content: flex-start; /* Alinea el contenido al inicio del contenedor */
+    margin-bottom: 10px; /* Margen inferior */
+    display: flex; /* Elimina el segundo "display: flex;" que parece ser redundante */
+    justify-content: space-between; /* Espaciado uniforme entre elementos */
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 20px auto; /* Margen general y centrado horizontalmente */
+    flex-wrap: wrap; /* Permite que los videos se envuelvan en pantallas más pequeñas */
+}
+
+/* Estilos para los elementos de video */
+video {
+    width: 48%; /* Ancho del video */
+    margin-bottom: 10px; /* Margen inferior */
+    margin-left: 20px; /* Margen a la izquierda */
+}
+
+/* Estilos específicos para pantallas más pequeñas (móviles) */
+@media (max-width: 600px) {
+    video {
+        width: 100%; /* Ancho completo para pantallas más pequeñas */
+    }
+}
+

@@ -1,0 +1,88 @@
+<html lang="es">
+<head>
+    <!-- Configuración de la codificación de caracteres y título de la página -->
+    <meta charset="UTF-8">
+    <title>DavidCine</title> 
+    
+    <!-- Enlace a la hoja de estilos externa "estilos inicio.css" -->
+    <link rel="stylesheet" type="text/css" href="CSS/estilos_inicio.css"> 
+    
+    <!-- Inclusión del conjunto de iconos Font Awesome -->
+    <script src="https://kit.fontawesome.com/1cd4b398c1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <!-- Barra de navegación -->
+        <nav>
+            <!-- Logo de la página -->
+            <img src="https://cdn-icons-png.flaticon.com/512/4221/4221360.png" alt="Logo">
+            
+            <!-- Título de la página -->
+            <h1>DavidCine</h1>
+            
+            <!-- Enlaces de la barra de navegación -->
+            <a class="enlace" href="Inicio.html"><u>Inicio</u></a>
+            <a class="enlace" href="Películas.html">Películas</a>
+            <a class="enlace" href="Actores.html">Actores</a>
+            
+            <!-- Contenedor de búsqueda con input y botón -->
+            <div class="container">
+                <input type="text" placeholder="Buscar..."> <!-- Campo de búsqueda -->
+                <button>
+                    <i class="fa-solid fa-magnifying-glass"></i> <!-- Icono de lupa -->
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal de la página -->
+    <main>
+        <!-- Sección del banner -->
+        <div class="banner">
+            <img class="imagenbanner" src="https://i.imgur.com/KHdh18x.gif" alt="Banner">
+            <div class="textobanner">
+                <p>Disfruta del cine como nunca antes</p>
+            </div>
+        </div>
+
+        <!-- Encabezado y párrafo sobre la página -->
+        <h2>Sobre esta página</h2>
+        <p>DavidCine es una página originalmente creada para sacar buena nota en la asignatura de lenguaje de marcas, ya que en verdad se esfuerza mucho y realmente se merece aprobar con algo más de un cinco, pero aparte de eso és una página de cine, con información meticulosamente seleccionada para poder disfrutar de una gran experiencia en la que podrás mantenerte informado sobre las mejores películas y los mejores actores del momento.</p>
+
+        <!-- Encabezado y videos de tráiler interesantes -->
+        <h2>Tráiler interesantes</h2>
+        <div class="trailer">
+            <video width="640" height="360" controls>
+                <source src="Multimedia/Videos/Trailer1.mp4" type="video/mp4" alt="">
+            </video>
+            <video width="640" height="360" controls>
+                <source src="Multimedia/Videos/Trailer2.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <!-- Encabezado y información del soundtrack del mes -->
+        <h2>Soundtrack del mes</h2>
+        <p>Ryan Gosling ft. Emma Stone - City of Stars</p>
+        
+        <!-- Reproductor de audio -->
+        <div class="audio-player"> 
+            <audio controls>
+                <source src="Multimedia/Audios/Soundtrack1.mp3" type="audio/mp3">
+            </audio>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>
+            <em>
+                David Alonso Tur<br>
+                dalonsotur@cifpfbmoll.eu<br>
+                Desenvolupament d'aplicacions multiplataforma
+            </em>
+        </p>
+    </footer>
+</body>
+</html>
